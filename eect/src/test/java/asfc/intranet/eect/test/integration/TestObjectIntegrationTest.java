@@ -4,6 +4,8 @@ import asfc.intranet.eect.EectApplication;
 import asfc.intranet.eect.backend.persistence.domain.TestObject;
 import asfc.intranet.eect.backend.service.TestService;
 import org.junit.Assert;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.greaterThan;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +38,7 @@ public class TestObjectIntegrationTest {
     public void testGetAllObject() {
         List<TestObject> list = testService.getAllObject();
         System.out.print("TEST " + list.size());
-        Assert.assertNotNull(list);
+        assertThat("Size",list.size(), greaterThan(5));
+
     }
 }
