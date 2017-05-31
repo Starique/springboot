@@ -39,6 +39,5 @@ public class TestObjectIntegrationTest {
         List<TestObject> list = testService.getAllObject();
         System.out.print("TEST " + list.size());
         assertThat("Size",list.size(), greaterThan(5));
-
     }
 }

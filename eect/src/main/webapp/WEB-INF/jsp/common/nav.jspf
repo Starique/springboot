@@ -1,0 +1,39 @@
+<div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="https://www.astoriabank.com/wp-content/uploads/filebase/nlogo.png" alt="Astoria Bank">
+            </a>
+            <%--<a class="navbar-brand" href="#"><img class="img-rounded" src="https://www.gravatar.com/avatar/b8daabc029a0c3fce081230907c1ece3.jpg?size=50" alt="Tarique">--%>
+            <%--</a>--%>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/">Home</a></li>
+                <li><a href="/eect/add">Create Object</a></li>
+                <li><a href="/test">About</a></li>
+                <li><a href="/">Logout</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+
+<%--<nav role="navigation" class="navbar navbar-default">--%>
+    <%--<div class="">--%>
+        <%--<a href="#" class="navbar-brand">--%>
+            <%--<img class="img-circle" src="https://www.gravatar.com/avatar/b8daabc029a0c3fce081230907c1ece3.jpg?size=200"--%>
+                 <%--alt="Tarique" width="50" height="50" /> APPLICATION MANAGEMENT CENTER </a>--%>
+    <%--</div>--%>
+    <%--<div class="navbar-collapse">--%>
+        <%--<ul class="nav navbar-nav">--%>
+            <%--<li class="active"><a href="/eec/list">Home</a></li>--%>
+            <%--<li><a href="/eect/add">Create </a></li>--%>
+        <%--</ul>--%>
+    <%--</div>--%>
+<%--</nav>--%>

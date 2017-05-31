@@ -9,6 +9,8 @@ import java.io.Serializable;
 @Entity
 @Table(name = "Employee")
 public class TestObject implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
@@ -29,10 +31,20 @@ public class TestObject implements Serializable {
     @Column(name = "active")
     private boolean active;
 
+    /**
+     * Default Constructor a must for spring bean
+     */
     public TestObject() {
         super();
     }
 
+    /**
+     * @param name
+     * @param lastName
+     * @param email
+     * @param phone
+     * @param active
+     */
     public TestObject(String name, String lastName, String email, String phone, boolean active) {
         this.name = name;
         this.lastName = lastName;
@@ -89,6 +101,7 @@ public class TestObject implements Serializable {
         this.active = active;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -101,5 +114,13 @@ public class TestObject implements Serializable {
     @Override
     public int hashCode() {
         return (int) (id ^ (id >>> 32));
+    }
+
+    @Override
+    public String toString() {
+        return "TestObject{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
