@@ -4,7 +4,6 @@
 <form:form method="post" commandName="testObject">
     <div class ="well">
     <fieldset>
-        <legend>Details</legend>
         <div class='row'>
             <div class='col-sm-4'>
                 <div class='form-group'>
@@ -40,7 +39,7 @@
                 <div class='form-group'>
                     <form:label path="active">Active </form:label>
                     <form:select path="active" class="form-control">
-                        <form:option value="Yes">No</form:option>
+                        <form:option value="No">No</form:option>
                         <form:option value="Yes">Yes</form:option>
                     </form:select>
                     <form:errors path="active" cssClass="text-warning" />
@@ -59,15 +58,12 @@
             <div class='col-sm-12'>
                 <div class='form-group'>
                     <form:label path="name">Description </form:label>
-                    <form:textarea path="name" cols="40" type="text" class="form-control" rows="10"/>
+                    <form:textarea path="name" cols="40" type="text" class="form-control" rows="4"/>
                     <form:errors path="name" cssClass="text-warning" />
                 </div>
             </div>
         </div>
-    </div>
-
-    <button type="submit" class="btn btn-success">Add</button>
-
+        <button type="submit" class="btn btn-success">Add</button>
     </fieldset>
     </div>
 </form:form>

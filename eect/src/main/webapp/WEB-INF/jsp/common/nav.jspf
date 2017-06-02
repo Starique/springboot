@@ -7,8 +7,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img class="img-rounded" src="https://www.gravatar.com/avatar/b8daabc029a0c3fce081230907c1ece3.jpg?size=50" alt="Tarique">
+
+            <a class="navbar-brand" href="#"><img src="" alt="Astoria Bank">
             </a>
+
+            <%--<a class="navbar-brand" href="#"><img class="img-rounded" src="https://www.gravatar.com/avatar/b8daabc029a0c3fce081230907c1ece3.jpg?size=50" alt="Tarique">--%>
+            <%--</a>--%>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">

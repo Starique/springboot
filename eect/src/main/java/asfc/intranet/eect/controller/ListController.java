@@ -30,6 +30,13 @@ public class ListController {
 	@RequestMapping(value = "/eect/list", method = RequestMethod.GET)
 	public String showList(ModelMap modelMap){
 		modelMap.put("list", testService.getAllObject());
+
+		modelMap.put("list1", testService.getAllObject());
+
+		modelMap.put("list2", testService.getAllObject());
+
+		modelMap.put("list3", testService.getAllObject());
+
 		return "list";
 	}
 

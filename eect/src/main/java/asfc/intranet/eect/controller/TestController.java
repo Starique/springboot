@@ -1,5 +1,6 @@
 package asfc.intranet.eect.controller;
 
+import asfc.intranet.eect.backend.persistence.domain.TestObject;
 import asfc.intranet.eect.backend.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,9 +20,17 @@ public class TestController {
 		//return "test";
 	//}
 
+//	@RequestMapping(value = "/test", method = RequestMethod.GET)
+//	public String showList(ModelMap modelMap){
+//		modelMap.put("list", testService.getAllObject());
+//		return "test";
+//	}
+
 	@RequestMapping(value = "/test", method = RequestMethod.GET)
-	public String showList(ModelMap modelMap){
-		modelMap.put("list", testService.getAllObject());
+	public String showAdd(ModelMap modelMap){
+		TestObject testObject = new TestObject();
+		testObject.setName("defaultName");
+		modelMap.addAttribute("testObject", testObject);
 		return "test";
 	}
 
